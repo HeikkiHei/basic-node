@@ -1,3 +1,3 @@
 @Library('shared-jenkins-library') _
 
-Pipeline {} 
+Pipeline {}
