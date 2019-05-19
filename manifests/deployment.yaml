@@ -2,26 +2,26 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   namespace: workshop
-  name: heikkihei-basic-node
+  name: heikki-hei-basic-node
   labels:
-    app: heikkihei-basic-node
+    app: heikki-hei-basic-node
 
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   selector:
     matchLabels:
-      app: heikkihei-basic-node
+      app: heikki-hei-basic-node
 
   template:
     metadata:
       labels:
-        app: heikkihei-basic-node
+        app: heikki-hei-basic-node
       annotations:
     spec:
       containers:
-        - image: gcr.io/unity-ads-workshop-test/heikkihei-basic-node:latest
-          name: heikkihei-basic-node
+        - image: gcr.io/unity-ads-workshop-test/heikki-hei-basic-node:latest
+          name: heikki-hei-basic-node
           imagePullPolicy: IfNotPresent
           resources:
             requests:
